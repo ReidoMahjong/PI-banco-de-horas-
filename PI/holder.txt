@@ -1,0 +1,19 @@
+<h1>Formulario de Registro</h1>
+<form action="c_horas_process.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="tipo" id="tipo" placeholder="EVENTO - CURSO - ATIVIDADE">
+    <br>
+    <input type="text" name="instituicao" id="instituicao" placeholder="Nome da Instituição">
+    <br>
+    <input type="text" name="ano" id="ano" placeholder="Ano">
+    <br>
+    <input type="file" name="img_certificado" id="img_certificado" required>
+    <input type="submit" value="enviar">
+</form>
+<br>
+
+<input type="text" name="curso" id="curso" list="lista_curso" required pattern="ADS|ADM|PEDAGOGIA">
+<datalist id="lista_curso">
+    <option value="ADS"></option>
+    <option value="ADM"></option>
+    <option value="PEDAGOGIA"></option>
+</datalist>
